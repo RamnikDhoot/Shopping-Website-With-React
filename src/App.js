@@ -1,0 +1,16 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'font-awesome/css/font-awesome.min.css';
+
+import Navbar from './components/Navbar';
+import './App.css';
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
+}
+
+export default App;

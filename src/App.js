@@ -4,11 +4,13 @@ import 'font-awesome/css/font-awesome.min.css';
 
 import Navbar from './components/Navbar';
 import './App.css';
+import main from './components/main';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <main />
     </div>
   );
 }

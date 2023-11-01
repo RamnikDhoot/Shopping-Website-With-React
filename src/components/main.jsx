@@ -6,7 +6,7 @@ function main(){
 <div class="row">
   <div class="col-md-4">
     <div class="card mb-3">
-      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image">
+      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image"></img>
       <div class="card-body">
         <h5 class="card-title">Product Name</h5>
         <p class="card-text">Product Description</p>
@@ -16,7 +16,7 @@ function main(){
   </div>
   <div class="col-md-4">
     <div class="card mb-3">
-      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image">
+      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image"></img>
       <div class="card-body">
         <h5 class="card-title">Product Name</h5>
         <p class="card-text">Product Description</p>
@@ -26,7 +26,7 @@ function main(){
   </div>
   <div class="col-md-4">
     <div class="card mb-3">
-      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image">
+      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image"></img>
       <div class="card-body">
         <h5 class="card-title">Product Name</h5>
         <p class="card-text">Product Description</p>
@@ -39,7 +39,7 @@ function main(){
 <div class="row">
   <div class="col-md-4">
     <div class="card mb-3">
-      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image">
+      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image"></img>
       <div class="card-body">
         <h5 class="card-title">Product Name</h5>
         <p class="card-text">Product Description</p>
@@ -49,7 +49,7 @@ function main(){
   </div>
   <div class="col-md-4">
     <div class="card mb-3">
-      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image">
+      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image"></img>
       <div class="card-body">
         <h5 class="card-title">Product Name</h5>
         <p class="card-text">Product Description</p>
@@ -59,7 +59,7 @@ function main(){
   </div>
   <div class="col-md-4">
     <div class="card mb-3">
-      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image">
+      <img src="https://placehold.it/300x300" class="card-img-top" alt="Product Image"></img>
       <div class="card-body">
         <h5 class="card-title">Product Name</h5>
         <p class="card-text">Product Description</p>

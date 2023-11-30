@@ -20,6 +20,9 @@
             background-color: #343a40;
             color: #ffffff;
             transition: background-color 0.5s ease;
+            height: 100%; /* Set height to 100% */
+            position: fixed; /* Fix the position */
+            top: 0; /* Align to the top */
         }
 
         .nav-link {
@@ -39,6 +42,7 @@
 
         h2 {
             color: #28a745;
+            transition: color 0.5s ease; /* Add transition for color change */
         }
 
         .form-check-input:checked {
@@ -69,6 +73,10 @@
 
         .main-content.high-contrast {
             background-color: #000 !important;
+            color: #ffa500 !important;
+        }
+
+        h2.high-contrast {
             color: #ffa500 !important;
         }
 
@@ -216,15 +224,33 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Check local storage for user preferences on page load
+        window.onload = function () {
+            if (localStorage.getItem('highContrast') === 'true') {
+                toggleHighContrast();
+            }
+
+            if (localStorage.getItem('largerText') === 'true') {
+                toggleLargerText();
+            }
+        };
+
         function toggleHighContrast() {
             document.body.classList.toggle('high-contrast');
             document.querySelector('.sidebar').classList.toggle('high-contrast');
             document.querySelector('.main-content').classList.toggle('high-contrast');
+            document.querySelector('h2').classList.toggle('high-contrast');
             document.querySelectorAll('.btn-primary').forEach(btn => btn.classList.toggle('high-contrast'));
+
+            // Update local storage
+            localStorage.setItem('highContrast', document.body.classList.contains('high-contrast'));
         }
 
         function toggleLargerText() {
             document.body.classList.toggle('larger-text');
+
+            // Update local storage
+            localStorage.setItem('largerText', document.body.classList.contains('larger-text'));
         }
     </script>
 </body>

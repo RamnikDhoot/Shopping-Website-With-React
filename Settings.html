@@ -81,6 +81,11 @@
             background-color: #ff8c00 !important;
             border-color: #ff8c00 !important;
         }
+
+        /* Larger Text Styles */
+        body.larger-text {
+            font-size: 30px;
+        }
     </style>
 </head>
 
@@ -191,7 +196,8 @@
                                 <label class="form-check-label" for="highContrast">High Contrast Mode</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="largerText">
+                                <input class="form-check-input" type="checkbox" id="largerText"
+                                    onchange="toggleLargerText()">
                                 <label class="form-check-label" for="largerText">Larger Text</label>
                             </div>
                             <div class="form-check">
@@ -215,6 +221,10 @@
             document.querySelector('.sidebar').classList.toggle('high-contrast');
             document.querySelector('.main-content').classList.toggle('high-contrast');
             document.querySelectorAll('.btn-primary').forEach(btn => btn.classList.toggle('high-contrast'));
+        }
+
+        function toggleLargerText() {
+            document.body.classList.toggle('larger-text');
         }
     </script>
 </body>

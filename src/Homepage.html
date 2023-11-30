@@ -443,15 +443,13 @@ With compatibility for screen readers, keyboard navigation features, and adjusta
           document.querySelector('h2').classList.toggle('high-contrast');
           document.querySelectorAll('.btn-primary').forEach(btn => btn.classList.toggle('high-contrast'));
 
-          // Update local storage
-          localStorage.setItem('highContrast', document.body.classList.contains('high-contrast'));
+        
       }
 
       function toggleLargerText() {
           document.body.classList.toggle('larger-text');
 
-          // Update local storage
-          localStorage.setItem('largerText', document.body.classList.contains('larger-text'));
+         
       }
   </script>
   </body>

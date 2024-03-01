@@ -68,16 +68,13 @@ function Signup() {
       navigate("/signin"); // Redirect to sign-in page
     } else {
       alert("Please ensure the passwords match and meet the strength requirements.");
-      // Optionally clear the form or password fields here
       setFormData({ ...formData, password: "", confirmPassword: "" });
     }
   };
 
   return (
     <div className="text-center">
-      {/* Navbar and form code remains unchanged */}
 
-      {/* Password strength indicator and footer code remains unchanged */}
     </div>
   );
 }
